@@ -11,42 +11,47 @@ body {
 }
 
 /* Floating Background Elements */
+/* Floating Background Elements */
 .background-shape {
     position: absolute;
-    width: 150px;
-    height: 150px;
+    width: 250px;
+    /* Increased size */
+    height: 250px;
     border-radius: 50%;
-    filter: blur(50px);
-    opacity: 0.4;
+    filter: blur(80px);
+    /* More blur for glow effect */
+    opacity: 0.6;
+    /* Increase visibility */
     z-index: -1;
+    /* Ensures it's behind content */
     animation: float 6s ease-in-out infinite alternate;
 }
 
 /* Different shapes & colors */
 .shape1 {
     background: linear-gradient(135deg, #ff99cc, #ff6699);
-    top: 10%;
+    top: 5%;
     left: 5%;
 }
 
 .shape2 {
     background: linear-gradient(135deg, #66ccff, #0099ff);
-    bottom: 15%;
+    bottom: 10%;
     right: 10%;
     animation-delay: 2s;
 }
 
 .shape3 {
     background: linear-gradient(135deg, #ffcc66, #ff9933);
-    top: 50%;
-    left: 40%;
+    top: 40%;
+    left: 45%;
     animation-delay: 3s;
 }
 
 .shape4 {
     background: linear-gradient(135deg, #33ff99, #00cc66);
-    bottom: 20%;
-    left: 15%;
+    bottom: 25%;
+    left: 10%;
     animation-delay: 1.5s;
 }
 
@@ -57,10 +62,10 @@ body {
     }
 
     100% {
-        transform: translateY(-20px) scale(1.1);
+        transform: translateY(-30px) scale(1.2);
+        /* More noticeable movement */
     }
 }
-
 /* Hero Section */
 .hero {
     padding: 80px 20px;
